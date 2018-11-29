@@ -1,0 +1,118 @@
+.lecture__header {
+  position: relative;
+  height: 33vh;
+  margin-bottom: $gutter;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/code.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.lecture__header-category {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+.lecture__header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.lecture__content {
+  max-width: ($max-width*(2/3));
+  margin: 0 auto;
+}
+
+.lecture__heading {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.lecture__li {
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+.lecture__p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.lecture__blockquote {
+  position: relative;
+  padding-left: 3em;
+  margin: 2em auto;
+  line-height: 1.5;
+  background: $cLtGray;
+}
+
+.lecture__blockquote::before {
+  position: absolute;
+  top: -$gutter/2;
+  left: 0;
+  font-size: 3em;
+  content: "\201C";
+}
+
+.lecture__blockquote span {
+  margin-top: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.figure__caption {
+  font-style: italic;
+}
+
+.lecture__figure {
+  text-align: center;
+}
+
+.lecture__footer {
+  text-align: center;
+}
+
+.complete__lecture {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.complete__lecture:hover {
+  color: $cDkGray;
+}
+
+.complete__lecture-true {
+  font-weight: bold;
+  color: $cLtGreen;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.complete__lecture-true:hover {
+  color: $cDkGreen;
+}
+
+.yt__wrapper {
+  position: relative;
+  height: 0;
+  padding-top: $gutter;
+  padding-bottom: 56.25%; //set aspect ratio
+  margin-bottom: 1em;
+}
+
+.yt__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

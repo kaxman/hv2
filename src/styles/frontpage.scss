@@ -1,0 +1,61 @@
+.frontpage__header {
+  position: relative;
+  height: 33vh;
+  margin-bottom: $gutter;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/header.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.frontpage__header-text {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frontpage__header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.lecture__buttons {
+  display: flex;
+  max-width: 33.33vw;
+  justify-content: center;
+  padding: $gutter;
+  margin: 0 auto;
+}
+
+.lecture__buttons > button {
+  padding: ($gutter/2) $gutter;
+  margin-right: $gutter/2;
+  margin-left: $gutter/2;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: 8px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+.filter__active {
+  background-color: $cLtGreen;
+}
+
+.filter__active:hover {
+  background-color: $cDkGreen;
+}
+
+.filter__inactive {
+  background-color: $cLtGray;
+}
+
+.filter__inactive:hover {
+  background-color: $cDkGray;
+}
