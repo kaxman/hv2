@@ -8,4 +8,6 @@ Run `rollup` with eg `npm run rollup`
 
 Sources transpile into `/dist` folder.
 
+Launch project into browser with `npm run browser-sync`
+
 Created by jac11.
